@@ -1,0 +1,65 @@
+<!DOCTYPE html><!-- tells the browser what's the document type -->
+<!-- NOTE for XHTML: Close tags to be able to use the html file as xhtml too -->
+
+<!-- multi language webpage: Use lang attribute on html tag to define the language. To cover xhtml use xml:lang
+
+    Use a default language in html tag and apply the rest of languages around the content as below
+    <div lang="fr-CA" xml:lang="fr-CA">
+        Canadian French content...
+    </div>
+    <div lang="en-CA" xml:lang="en-CA">
+        Canadian English content...
+    </div>
+    <div lang="nl-NL" xml:lang="nl-NL">
+        Netherlands, Dutch content...
+    </div>
+-->
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script async type="application/javascript" src="js.js"></script>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="test,example">
+    <meta name="description" content="This is a test example">
+    <meta name="author" content="Ima">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <title>Html example</title>
+</head>
+
+<body onload="mvar();">
+
+<ul id="parent-list">
+    <li id="post-1">Item 1</li>
+    <li id="post-2">Item 2</li>
+    <li id="post-3">Item 3</li>
+    <li id="post-4">Item 4</li>
+    <li id="post-5">Item 5</li>
+    <li id="post-6">Item 6</li>
+</ul>
+
+<div id="block">
+    <button id="submit" type="submit" onclick="submit();">submit</button>
+    <label id="output"></label>
+</div>
+<div id="timing">
+
+    <label id="timer"></label>
+</div>
+<!-- data-* store custom data in the page and we can add it in all html tags
+<ul>
+  <li data-animal-type="bird">Owl</li>
+  <li data-animal-type="fish">Salmon</li>
+  <li data-animal-type="spider">Tarantula</li>
+</ul>
+-->
+
+<!--<img src="image-src.png" srcset="image-1x.png 1x, image-2x.png 2x,-->
+                                 <!--image-3x.png 3x, image-4x.png 4x">-->
+
+<!--<script defer></script>-->
+
+</body>
+</html>

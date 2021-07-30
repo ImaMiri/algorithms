@@ -1,0 +1,92 @@
+a1: 1,3,4,7,11,107
+      ^
+
+a2: 2,3,11,19
+      ^
+
++: 1, 2,
+
+3, 11
+
+List<Integer> intersectArray(int[] a1, int[] a2) {
+
+  // O(n) n is size of bigger array
+  List<Integer> result = new ArrayList<Integer>();
+
+  int l1 = a1.length;
+  int l2 = a2.length;
+
+  int helper1 = 0;
+  int helper2 = 0;
+
+  while(helper1<l1 || helper2 < l2){
+
+    if(helper1==l1 || helper2==l2) break;
+
+    if(a1[helper1] == a2[helper2]){
+
+      result.add(a1[helper1]);
+      helper1++;
+      helper2++;
+
+    } else if (a1[helper1] < a2[helper2]) {
+      helper1++;
+
+    } else if (a1[helper1] > a2[helper2]) {
+      helper2++:
+    }
+
+  }
+
+  // O(n^2)
+  // for(int i=0; i<a1.length; i++){
+  //   for(int j=0; j<a2.length; j++){
+  //     if(a1[i]==a2[j]){
+  //       result.add(a1[i]);
+  //     }
+  //   }
+  // }
+
+  return result;
+}
+
+=======================
+
+
+Write a function that takes an input string and an alphabet, and returns the shortest substring of the input which contains every letter of the alphabet at least once.
+
+Example:
+
+Input: "aaccbc"
+
+Alphabet: "abc"
+
+Output: "accb"
+
+String shorterstSubstring(String str, String a){
+
+  String output;
+
+  for (int i=0; i< str.length(); i++) { //
+    String substr = null;
+    for(int j=0; j< str.length(); j++){
+     substr = str.substring(i,j);
+     if (checkSubString(substr, a)) { //
+      output = substr;
+     }
+    }
+  }
+
+  return output;
+}
+
+
+boolean checkSubString(String substr, String a){
+  boolean checked = false;
+  for(int i=0;i<substr.length(); i++;){
+    for(int j=0; ){
+
+    }
+  }
+  return checked;
+}
